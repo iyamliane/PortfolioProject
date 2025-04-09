@@ -10,10 +10,10 @@
 ### **Introduction**
 The role of web servers is crucial in delivering content efficiently across the internet. They handle requests from users, process them, and serve static or dynamic web pages accordingly. Choosing the right web server can significantly impact the performance, scalability, and security of a web application.
 
-Three of the most widely used web servers today are Apache, Nginx, and Caddy. Each has its own strengths, weaknesses, and best use cases. Apache, one of the oldest and most established web servers, offers extensive module support and flexibility. Nginx, known for its high performance and efficient handling of concurrent connections, is widely used for reverse proxying and load balancing. Caddy, a more recent entrant, simplifies web hosting with automatic HTTPS and an easy-to-use configuration system.
+Three of the most widely used web servers today are Apache, Nginx, and Caddy. Each has its own strengths, weaknesses, and best use cases. Apache, one of the oldest and most established web servers, offers extensive module support and flexibility. Nginx, known for its high performance and efficient handling of concurrent connections, is widely used for reverse proxying and load balancing. Caddy, a more recent web server, simplifies web hosting with automatic HTTPS and an easy-to-use configuration system.
 
 This section compares these three web servers based on their performance, ease of configuration, and best use cases.
-Web servers are the backbone of modern web applications, responsible for delivering web pages to users efficiently. Three major web servers dominate the industry: Apache, Nginx, and Caddy. This section compares their performance, ease of configuration, and best use cases.
+
 
 ### **Feature Comparison**
 
