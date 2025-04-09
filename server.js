@@ -6,6 +6,9 @@ require('dotenv').config();
 
 const app = express();
 
+const path = require('path');
+app.use(express.static(path.join(__dirname, 'public')));
+
 // Configuration
 app.set('view engine', 'ejs');
 app.use(express.static('public'));
