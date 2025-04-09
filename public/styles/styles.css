@@ -241,21 +241,32 @@ form button:hover {
     }
 }
 
-/* GitHub Contributions Widget */
-#github-contributions {
-    background: var(--surface);
-    border-radius: 1rem;
-    padding: 2rem;
-    margin: 2rem 0;
-    border: 1px solid rgba(255, 255, 255, 0.1);
+/* GitHub Contributions Calendar */
+#calendar-component {
+    background: transparent !important;
+    padding: 1rem !important;
+    overflow-x: auto;
 }
 
 .contrib-table {
-    margin: 0 auto;
+    margin: 0 auto !important;
+    border-spacing: 3px !important;
+    border-collapse: separate !important;
 }
 
-.contrib-day[data-level="0"] { background-color: #2d333b; }
-.contrib-day[data-level="1"] { background-color: #0e4429; }
-.contrib-day[data-level="2"] { background-color: #006d32; }
-.contrib-day[data-level="3"] { background-color: #26a641; }
-.contrib-day[data-level="4"] { background-color: #39d353; }
+.contrib-day {
+    width: 12px !important;
+    height: 12px !important;
+    border-radius: 2px !important;
+    background-color: var(--surface) !important;
+}
+
+.contrib-day[data-level="1"] { background-color: rgba(124, 58, 237, 0.3) !important; }
+.contrib-day[data-level="2"] { background-color: rgba(124, 58, 237, 0.5) !important; }
+.contrib-day[data-level="3"] { background-color: rgba(124, 58, 237, 0.7) !important; }
+.contrib-day[data-level="4"] { background-color: var(--primary) !important; }
+
+text.contrib-month, text.contrib-weekday {
+    fill: var(--text) !important;
+    font-family: 'Inter', sans-serif !important;
+}

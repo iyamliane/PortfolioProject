@@ -48,13 +48,3 @@ app.get('/', (req, res) => {
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
 
-// Add CORS proxy for GitHub API
-app.get('/github-proxy', async (req, res) => {
-    try {
-        const response = await fetch(`https://github-contributions-api.deno.dev/${req.query.user}`);
-        const data = await response.json();
-        res.json(data);
-    } catch (error) {
-        res.status(500).json({ error: 'Failed to fetch GitHub data' });
-    }
-});
